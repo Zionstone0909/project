@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: orange;
+    --primary-font: Algerian;
+    --bg-img-center: no-repeat center/cover;
+}
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 99;
+}
+.list_item{
+  display: inline;  
+}
+.list_item a{
+     padding: 20px;
+     text-decoration: none;
+     font-family: sans-serif;
+     color: #fff; 
+}
+.list_item a:hover{
+    border-bottom: 2px solid #fff ;
+}
+.nav_logo{
+    width: 25%;
+    height: 25%;
+}
+/*MAIN*/
+.hero{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(IMAGE/children.webp) var(--bg-img-center) fixed;
+}
+.hero_headings-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: sans-serif;
+    margin-left: 10rem;
+    color: white;
+}
+.hero_main-headings{
+    font-size: 4rem;
+    color: #fff;
+}
+span{
+    color: orange;
+    font-family: var(--primary-font);
+}
+.hero_headings-container p {
+    font-weight: bold;
+}
+.main-btn{
+    text-decoration: none;
+    margin-top: 20px;
+    color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+}
+.about{
+    background-color: rgb(71, 71, 71);
+    width: 250vw;
+    height: 100vh;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -150px;
+}
+.mission{
+    background-color: rgb(71, 71, 71);
+    width: 100vw;
+    height: 300vh;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.about p{
+    text-indent: 5px;
+    text-overflow:inherit;
+    padding: 30px;
+    line-height: 30px;
+    overflow-wrap: break-word;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+    font-size: large;
+    font-weight: bold;
+    line-height: 30px;
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 200px;
+}
+.card{
+    padding: 20px;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+    border: 1px solid #ccc;
+}
+.card:hover{
+    box-shadow: 2px 2px 2px 2px #ccc;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.card p{
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+    align-content: center;
+}
+.card-image{
+    width: 300px;
+    height: 300px;
+}
+.img-1{
+    background: url(IMAGE/sharing\ love.jpg) var(--bg-img-center);
+}
+.img-2{
+    background: url(IMAGE/serving.jpg) var(--bg-img-center);
+}
+.img-3{
+    background: url(IMAGE/prechomg.jpg) var(--bg-img-center);
+}
+.owner-image img{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+}
+
+
+.content{
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    position: relative;
+    padding-bottom: 5rem;
+    transform-origin: center left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    padding: 5rem;
+    background: #292929;
+    color: #fff;
+}
+.container h1{
+    margin-bottom: 5rem;
+    margin-left: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form label{
+    margin-bottom: 5px;
+}
+form label .special{
+    color: crimson;
+}
+form input{
+    margin-bottom: 2rem;
+    outline: none;
+    height: 30px;
+    padding: 15px;
+}
+button{
+width: 50%;
+height: 30px;
+margin-left: 90px;
+}
+.contact{
+    background-color: rgb(71, 71, 71);
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
